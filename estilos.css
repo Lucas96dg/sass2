@@ -1,0 +1,99 @@
+h2 {
+  text-align: left;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 60px;
+  color: darkblue;
+  text-shadow: 5px 5px 10px black;
+}
+
+.independiente {
+  background-color: orange;
+  width: 70%;
+  height: 45px;
+  color: red;
+}
+
+.boca {
+  background-color: darkblue;
+  width: 70%;
+  height: 45px;
+  color: yellow;
+}
+
+.river {
+  background-color: black;
+  width: 70%;
+  height: 45px;
+  color: darkred;
+}
+
+.rasin {
+  background-color: grey;
+  width: 70%;
+  height: 45px;
+  color: lightblue;
+}
+
+.lorenzo {
+  background-color: blue;
+  width: 70%;
+  height: 45px;
+  color: red;
+}
+
+p {
+  color: red;
+  background-color: black;
+  border: 5px solid blue;
+}
+
+.hinchada {
+  background-size: 100%;
+  background-image: url("imagenes/boquita.jpg");
+  background-size: 600px;
+  width: 100%;
+  height: 150px;
+}
+
+.club {
+  height: 150px;
+  background-color: darkblue;
+  border: 3px solid #333;
+}
+
+.random-1 {
+  width: 8em;
+  background-image: url("imagenes/libertadores.jpg");
+  background-position: center;
+  font-size: 30px;
+}
+
+.random-2 {
+  width: 16em;
+  background-image: url("imagenes/libertadores.jpg");
+  background-position: center;
+  font-size: 30px;
+}
+
+.random-3 {
+  width: 24em;
+  background-image: url("imagenes/libertadores.jpg");
+  background-position: center;
+  font-size: 30px;
+}
+
+.random-4 {
+  width: 32em;
+  background-image: url("imagenes/libertadores.jpg");
+  background-position: center;
+  font-size: 30px;
+}
+
+.random-5 {
+  width: 40em;
+  background-image: url("imagenes/libertadores.jpg");
+  background-position: center;
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,137 @@
+// Predeterminaciones
+$ancho: 700px;
+$alto: 170px;
+
+$var1: 75%;
+$var2: 35%;
+
+h2{
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+    color: darkblue;
+    text-shadow: 5px 5px 10px black;
+}
+// tamaños
+$xs: 15px;
+$small: 20px;
+$medium: 45px;
+$large: 65px;
+$xl: 90px;
+
+// paleta de colores
+
+$color1: orange;
+$color2: black;
+$color3: darkblue;
+$color4: grey;
+
+// dimensiones
+$size1: 100%;
+$size2: 50%;
+$size3: 30%;
+$size4: 10%;
+
+.independiente{
+    background-color: $color1;
+    width: ($size1) - ($size3);
+    // ancho de 70%
+    height: $medium;
+    color: red;
+
+}
+.boca{
+    background-color: $color3;
+    width: ($size1) - ($size3);
+    // ancho 70%
+    height: $medium;
+    color: yellow;
+}
+.river{
+    background-color: $color2;
+    width: ($size1) - ($size3);
+    // ancho del 70%
+    height: $medium;
+    color: darkred;
+}
+.rasin{
+    background-color: $color4;
+    width: ($size1) - ($size3);
+    // anchod el 70%
+    height: $medium;
+    color: lightblue;
+}
+.lorenzo{
+    background-color: blue;
+    width: ($size1) - ($size3);
+    // ancho del 70%
+    height: $medium;
+    color: red;
+}
+// fin operadores
+
+// inicio condicionales
+
+
+$equipo: independiente;
+
+// constante
+p {
+    @if $equipo == independiente {
+        color: red;
+        background-color: $color2;
+        border: 5px solid blue;     
+    }
+    @else if $equipo == river {
+        color: white;
+        background-color: $color2;
+        border: 5px solid red;
+    }
+    @else if $equipo == boca {
+        color: $color3;
+        background-color: yellow;
+        border: 5px solid $color3;
+    }
+    @else if $equipo == rasin {
+        color: $color4;
+        background-color: lightblue;
+        border: 5px solid aquamarine;
+    }
+    @else if $equipo == lorenzo {
+        color: $color3;
+        background-color: red;
+        border: 5px solid darkblue;
+    }
+}
+
+$hinchada: boca;
+
+.hinchada{
+    background-size: $size1;
+    @if $hinchada != independiente {
+        background-image: url("imagenes/boquita.jpg");
+        background-size: 600px;
+        width: $size1;
+        height: 150px;
+    }
+}
+// fin condicionales
+
+// inicio bucles
+
+.club{
+    height: 150px;
+    background-color: darkblue;
+    border: 3px solid #333;
+}
+@for $i from 1 through 5 {
+    .random-#{$i} {
+        width: 8em * $i;
+        background-image: url("imagenes/libertadores.jpg");
+        background-position: center;
+        font-size: 30px;
+    }
+}
+// bucle fin
+
+
